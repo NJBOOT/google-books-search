@@ -1,0 +1,9 @@
+#search-button {
+    margin: 20px;
+    float: right;
+}
+
+.search-container {
+    border: 1px black solid;
+    padding: 10px;
+}
