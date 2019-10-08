@@ -23,7 +23,7 @@ function SavedResults(props) {
                                     </div>
                                     <div className="col text-right">
                                         <a className="btn btn-dark view-book" href={savedBook.link}>View</a>
-                                        <button className="btn btn-dark delete-book" data-id={savedBook._id}>Delete</button>
+                                        <button className="btn btn-dark delete-book" data-id={savedBook._id} onClick={()=> props.handleBookDelete(savedBook._id)}>Delete</button>
                                     </div>
                                 </div>
                                 <div className="row">

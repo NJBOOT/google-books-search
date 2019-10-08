@@ -21,12 +21,20 @@ getBooks = () => {
     })
 }
 
+handleBookDelete = (id) => {
+    API.deleteBook(id).then(res => {
+        console.log("Book Deleted")
+        this.getBooks()
+    })
+}
+
     render () {
         return (
             <div className="container-main">
                 <Header/>
                 <SavedResults
                 savedBooks = {this.state.savedBooks}
+                handleBookDelete= {this.handleBookDelete}
                 />
             </div>
         )
