@@ -24,7 +24,7 @@ app.get("*", (req, res) => {
 });
 
 //Connect to mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://root:rootpassword@cluster0.73g94.mongodb.net/googlebooks?retryWrites=true&w=majority" || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
